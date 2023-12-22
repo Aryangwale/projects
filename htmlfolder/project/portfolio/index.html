@@ -16,22 +16,22 @@
 <body>
 
     <div class="main-img">
-        <img src="https://www.w3schools.com/w3images/profile_girl.jpg" alt="" >
+        <img src="https://www.w3schools.com/w3images/profile_girl.jpg" alt="" onclick="ok2()">
     </div>
     <section class="section">
         <div class="menu-section">
             <img src="../clone/samsung/img/icons8-menu-50.png" alt="." width="40px" height="40px" onclick="ok1()">
             <div class="menu-section1" id="menu">
-                <div ><img src="img/icons8-x-50.png" alt="" width="40px" height="40px" onclick="ok2()"></div>
+                <div><img src="img/icons8-x-50.png" alt="" width="40px" height="40px" onclick="ok2()"></div>
                 <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li onclick="ok2()"><a href="#home" >Home</a></li>
+                    <li onclick="ok2()"><a href="#pro">Portfolio</a></li>
+                    <li onclick="ok2()"><a href="#about">About</a></li>
+                    <li onclick="ok2()"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="home">
             <div class="row main-row">
                 <div class="col-12 main1">
                     <h1>Jane Doe</h1>
@@ -45,8 +45,8 @@
                 </div>
             </div>
         </div>
-        <div class="container-lg">
-            <div class="row mt">
+        <div class="container-lg" id="pro">
+            <div class="row">
                 <h3 class="my">My Portfolio</h3>
                 <div class="col-6">
                     <div class="row pt-3">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-lg mt-5">
+        <div class="container-lg mt-5" id="about">
             <h1 class="my">About</h1>
             <p style="font-size: 15px; color: rgba(89, 88, 88, 0.801);">Some text about me. Some text about me. I am
                 lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -100,7 +100,7 @@
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
         </div>
-        <div class="container-lg mt-5">
+        <div class="container-lg mt-5" >
             <h1 class="my">My Skills</h1>
             <div class="row">
                 <h1 class="my1">Web Design</h1>
@@ -220,7 +220,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-lg mt-5">
+        <div class="container-lg mt-5" id="contact">
             <h1 class="my">Contact Me</h1>
             <div class="d-flex" style="align-items: center;">
                 <div><img src="../clone/samsung/img/icons8-location-50.png" alt=""
@@ -281,18 +281,20 @@
     </section>
     <script>
         var a = document.getElementById("menu");
-        a.style.maxWidth = "0%"
+        a.style.marginLeft = "100%"
         function ok1(){
-            console.log("done")
-            if(a.style.maxWidth == "0%"){
-                a.style.maxWidth = "100%"
-            }
+            a.style.marginLeft = "0%"
+            // console.log("done")
+            // if(a.style.maxWidth == "0%"){
+            //     a.style.maxWidth = "100%"
+            // }
         }    
         function ok2(){
-            console.log("done")
-            if(a.style.maxWidth == "100%"){
-                a.style.maxWidth = "0%"
-            }
+            a.style.marginLeft = "100%"
+            // console.log("done")
+            // if(a.style.maxWidth == "100%"){
+            //     a.style.maxWidth = "0%"
+            // }
         }    
     </script>
 </body>

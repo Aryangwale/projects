@@ -2,12 +2,25 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+#home {
+    padding-top: 20px;
+}
+#pro{
+    padding-top: 40px;
+}
+#about{
+    padding-top: 48px;
+}
+#contact{
+    padding-top: 40px;
 }
 .menu-section{
     width: 60%;
     height: 60px;
     position: fixed;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 3;
     right: 0;
     top: 0;
@@ -69,7 +82,7 @@
     display: none;
 }
 .mt{
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .my{
@@ -167,9 +180,9 @@
     left: 0;
     top: 0;
     background-color: #000000;
-    margin-top: -49px;
+    margin-top: -50px;
     overflow: hidden;
-    transition: all .3s ease-in;
+    transition: all .5s ease;
 }
 .menu-section1 ul{
     color: #fff;
@@ -179,10 +192,14 @@
 }
 .menu-section1 ul li{
     margin: 25px;
+}
+.menu-section1 ul li a{
+    
     font-size: 29px;
     color: #969494;
+    text-decoration: none;
 }
-.menu-section1 ul li:hover{
+.menu-section1 ul li a:hover {
     color: #ffffff;
 }
 
