@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main {
+            width: 100%;    
+            height: 570px;
+            border: 1px solid;
+            background-color: rgb(173, 170, 170);
+        }
+
+        #head {
+            display: flex;
+            color: white;
+            background-color: rgba(28, 28, 173, 0.756);
+            align-items: center;
+        }
+
+        #right {
+            flex: 1;
+            text-align: right;
+            /* background-color: red; */
+            margin-right: 30px;
+        }
+
+        #right button {
+            background-color: blue;
+        }
+
+        #contain {
+            display: flex;
+            padding-top: 40px;
+        }
+
+        #left h1 {
+            font-size: 30px;
+            margin: 0;
+            margin-left: 20px;
+        }
+
+        .inline {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .text p {
+            margin: 3px;
+            margin-right: 108PX;
+        }
+
+
+        .right {
+            width: 49%;
+        }
+
+        .right h1 {
+            margin: 0;
+            padding-bottom: 20px;
+            font-size: 29px;
+            font-weight: 400;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+
+        .right button {
+            background-color: red;
+            padding: 6px 14px;
+        }
+
+        .left {
+            width: 49%;
+        }
+
+        .left img {
+            margin: 50px;
+            width: 350px;
+            height: 220px;
+            opacity: .5;
+        }
+
+        .left img:hover {
+            opacity: .7;
+        }
+
+        .wid {
+            width: 337px;
+            margin-top: 20px;
+        }
+
+        .wid1 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <div id="head">
+            <div id="left">
+                <h1>Facebook</h1>
+            </div>
+            <div id="right">
+                <div class="inline">
+                    <label for="">Email | Phone</label><br>
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="inline">
+                    <label for="">Password</label><br>
+                    <input type="text" placeholder="First name">
+                </div>
+
+                <button type="submit">Log in</button>
+                <div class="text">
+                    <p>frogotten account?</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="contain">
+            <div class="left">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nobis aperiam </div>
+                <div><img src="img/facebook.jpg" alt=""></div>
+            </div>
+            <div class="right">
+                <h1>Create an account</h1>
+                <br>
+                <p>It's quick and easy</p>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Lasr name"><br>
+                <input type="text" placeholder="Mobile no." class="wid"><br>
+                <input type="password" placeholder="Password" class="wid">
+                <p>Birthday</p>
+                <select>
+                    <option value="">Day</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <select>
+                    <option value="">Month</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <select>
+                    <option value="">Year</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <div class="wid1">
+                    <label for="gender">Gender</label><br>
+                    <label for="mail">male</label>
+                    <input type="radio" name="gender" id="mail">
+                    <label for="femail">female</label>
+                    <input type="radio" name="gender" id="femail">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus sint tempora sapiente
+                        iure repudiandae voluptate rem !</p>
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

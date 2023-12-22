@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function new1() {
+            var i = document.getElementsByClassName("h");
+            a = i.length;
+
+            for (j = 0; j <= a; j++) {
+                i[j].innerHTML = 'java cs'
+                if (j == 0) {
+                    document.getElementById("h2").style.color = "red";
+                    document.getElementById("h2").style.backgroundColor = "blue";
+                }
+                else if(j==1){
+                    document.getElementById("h3").style.color = "blue";
+                    document.getElementById("h3").style.backgroundColor = "red";
+                }
+                
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 80px auto 30px;
+            height: 200px;
+            width: 400px;
+            border: 1px solid;
+            display: flex;
+            overflow-y: hidden;
+            justify-content: space-around;
+        }
+        div h1{
+            margin: 20px;
+           
+        }
+    </style>
+</head>
+
+<body align="center">
+    <div>
+        <h1 class="h" id="h2"></h1>
+        <h1 class="h" id="h3"></h1>
+        <h1 class="h"></h1>
+        <h1 class="h"></h1>
+        <h1 class="h"></h1>
+    </div>
+
+    <button onclick="new1()">ok</button>
+</body>
+
+</html>

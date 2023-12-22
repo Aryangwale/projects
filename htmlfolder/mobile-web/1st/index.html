@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile-web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <nav id="navbar">
+            <ul>
+                <li onclick="fun(1)">Home</li>
+                <li onclick="fun(2)">Services</li>
+                <li onclick="fun(3)">About us</li>
+                <li onclick="fun(4)">Contact us</li>
+                <li onclick="fun(5)">More|New</li>
+            </ul>
+        </nav>
+        <img src="https://img.icons8.com/?size=100&id=3096&format=png" alt="" width="25px" height="25px" id="change"
+            onclick="on()">
+    </div>
+    <main id="main">
+        <span id="item">Home</span>
+        <section id="home">
+            <div class="home-container">
+
+            </div>
+        </section>
+        <section id="s1">
+            <div id="sl">            <div class="inline">
+                <div class="img">
+                    <img src="https://th.bing.com/th?id=OPA.r%2f036Qrcl8d9fw474C474&w=136&h=136&c=17&o=6&dpr=1.5&pid=21.1"
+                        alt="" width="100%" height="100%">
+                </div>
+                <h2 class="t1">play-station 5</h2>
+                <h4 class="t2">Lorems natus quam. <br>Lorems natus numqu</h4>
+                <h3 class="t3">price 13k</h3>
+            </div>
+            <div class="inline">
+                <div class="img">
+                    <img src="https://th.bing.com/th?id=OPA.r%2f036Qrcl8d9fw474C474&w=136&h=136&c=17&o=6&dpr=1.5&pid=21.1"
+                        alt="" width="100%" height="100%">
+                </div>
+                <h2 class="t1">play-station 5</h2>
+                <h4 class="t2">Lorems natus quam. <br>Lorems natus numqu</h4>
+                <h3 class="t3">price 13k</h3>
+            </div>
+            <div class="inline">
+                <div class="img">
+                    <img src="https://th.bing.com/th?id=OPA.r%2f036Qrcl8d9fw474C474&w=136&h=136&c=17&o=6&dpr=1.5&pid=21.1"
+                        alt="" width="100%" height="100%">
+                </div>
+                <h2 class="t1">play-station 5</h2>
+                <h4 class="t2">Lorems natus quam. <br>Lorems natus </h4>
+                <h3 class="t3">price 13k</h3>
+            </div>
+        </div>
+
+        </section>
+    </main>
+    <script>
+        var o = document.getElementById("navbar")
+        o.style.maxWidth = "0px"
+        var img = document.getElementById("change")
+        function fun(x) {
+            var i = document.getElementById("item")
+            var l = document.getElementById("s1")
+            var b = document.getElementById("home")
+            if (x == 1) {
+                i.innerText = ("Home")
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                o.style.maxWidth = "0px"
+            }
+            if (x == 2) {
+                i.innerText = ("services")
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                b.style.display = ("none")
+                l.style.display = ("block")
+                o.style.maxWidth = "0px"
+            }
+            if (x == 3) {
+                i.innerText = ("About")
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                o.style.maxWidth = "0px"
+            }
+            if (x == 4) {
+                i.innerText = ("contact us")
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                o.style.maxWidth = "0px"
+            }
+            if (x == 5) {
+                i.innerText = ("new")
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                o.style.maxWidth = "0px"
+            }
+
+        }
+
+        function on() {
+            var img = document.getElementById("change")
+
+            if (o.style.maxWidth == "0px") {
+                o.style.maxWidth = "150px"
+                img.src = "https://img.icons8.com/?size=100&id=3062&format=png"
+            }
+            else {
+                img.src = "https://img.icons8.com/?size=100&id=3096&format=png"
+                o.style.maxWidth = "0px"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

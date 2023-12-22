@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#ok{
+    width: 100%;
+    height: 595px;
+    position: relative;
+    background-image: url(https://o.aolcdn.com/images/dims?quality=85&image_uri=https:%2F%2Fs.yimg.com%2Fuu%2Fapi%2Fres%2F1.2%2FobHtdMKaekAKOHCR2QY3fw--~B%2Fdz0xNjAwO2g9MTA2MzthcHBpZD15dGFjaHlvbg--%2Fhttps:%2F%2Fo.aolcdn.com%2Fdims-shared%2Fdims3%2FGLOB%2Fcrop%2F3500x2325%2B0%2B0%2Fresize%2F1600x1063!%2Fformat%2Fjpg%2Fquality%2F85%2Fhttps:%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fadam%2F4dd0637b3814450f067dd76f93e1f815%2F94689778.jpeg&client=amp-blogside-v2&signature=41d4efb4c3ecc0e4cebf4a8142de89b0b1ebc406);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+#form{
+    position: absolute;
+    width: 50%;
+    height: 560px;
+    border: 3px solid rgba(255, 255, 255, 0.701);
+    box-shadow: 0 0 19px black;
+    text-align: center;
+    margin: auto;
+    left: 25%;
+    background-color:  rgba(34, 30, 39, 0.454);
+    backdrop-filter: blur(8px);
+}   
+#form input{
+    width: 80%;
+    height: 38px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    font-size: 18px;
+}
+#form h1{
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    padding-bottom: 16px;
+    border-bottom: .4px solid silver;
+}
+#form h1 span{
+    color: red;
+}
+#form label{
+    margin-left: 70px;
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 21px;
+}
+#form select{
+    margin-left: 70px;
+    display: block;
+    margin: 5px 70px 0 70px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+}

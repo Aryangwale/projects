@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo"><h1>executive <br> <span>study abroad</span></h1></div>
+        <div id="nav-item">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Our Services</li>
+                <li>Responsibilities</li>
+                <li>Country</li>
+                <li>Apply</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="pro">
+            <h1>Holkar Science College <br>Project By :- Aryan Gwale</h1>
+        </div>
+        <div id="main-main">
+            <div id="main-left">
+                <h1>We Help to <span>Build</span> <br>Your Dream</h1>
+                <p>We are always availed to consuit ontaking your higher <br> education to the next level so you can stay competitive in</p>
+                <h2>Apply Online</h2>
+            </div>
+            <div id="main-right">
+                <img src="https://images.pexels.com/photos/3186386/pexels-photo-3186386.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image not found">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+                                                  css
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    color: black;
+    background-color: #fff;
+    /* border: 1px solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 2px 2px rgb(45, 39, 39);
+    z-index: 2;
+}
+#logo{
+    width: 390px;
+    height: inherit;
+    /* border: 1px solid; */
+    text-align: right;
+}
+#logo h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(32, 178, 171, 0.539);
+    /* border: 1px solid; */
+    font-size: 38px;
+    letter-spacing :   1.4px;
+}
+#logo span{
+    letter-spacing: 3px;
+    font-size: 17px;
+    /* border: 1px solid; */
+    display: block;
+    color: green;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.623);
+    margin-right: 10px;
+}
+#nav-item{
+    width: 100%;
+    height: inherit;
+    /* border: 1px solid; */
+    /* text-align: right; */
+}
+#nav-item ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: inherit;
+}
+#nav-item ul li{
+    margin: 25px;
+    font-size: 20px;
+    padding: 6px 15px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    cursor: pointer;
+
+}
+#nav-item ul li:hover{
+    color: green;
+    border: 1px solid;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid; */
+    padding-top: 70px;
+    background-color: rgba(193, 40, 40, 0.562);
+    position: relative;
+}
+#pro{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(2, 2, 58);
+    width: 49%;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+#pro h1{
+    font-size: 39px;
+    font-weight: 400;
+}
+#main-main{
+    width: 100%;
+    height: 595px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff77;
+    backdrop-filter: blur(3.9px);
+}
+#main-left{
+    width: 49%;
+    height: inherit;
+    /* text-align: center; */
+    padding-top: 180px;
+}
+#main-left h1{
+    font-size: 46px;
+}
+#main-left span{
+    color: green;
+}
+#main-left p{
+    font-size: 21px;
+    margin: 20px 0;
+}
+#main-left h2{
+    /* border: 1px solid salmon; */
+    width: 160px;
+    text-align: center;
+    height: 34px;
+    color: #fff;
+    background-color: green;
+    border-radius: 6px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+#main-right{
+    width: 40%;
+    height: 550px;
+}
+#main-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}

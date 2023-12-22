@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side-nav</title>
+    <link rel="stylesheet" href="sty.css">
+    <style>
+        .form{
+            display: flex;
+            background-color: rgba(171, 14, 14, 0.521);
+            height: 560px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        table{
+            border: 2px solid;
+            border-radius: 23px;
+            background-color: rgba(255, 3, 3, 0.521);
+            box-shadow: 0px 0px 14px rgb(255, 255, 255);
+        }
+        table a{
+            text-decoration: none;
+            border: 1px solid;
+            color: black;
+            background-color: rgb(255, 255, 255); 
+            border-radius: 2px;
+        }
+
+        table a:hover {
+            background-color: rgba(255, 255, 255, 0.82);
+        }
+
+        table input {
+            margin: 15px 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                    <li align="right"><button><img src="img/icons8-menu-30.png" alt="" width="15px"
+                                height="15px"></button>
+                        <div class="sub">
+                            <ul style="display: flex;">
+                                <li style="display: flex;"><img src="img/home.icon.png" alt="" width="18px"
+                                        height="18px"></li>
+                                <li><img src="img/vision.icon.png" alt="" width="18px" height="18px"></li>
+                                <li><img src="img/About.icon.png" alt="" width="18px" height="18px"></li>
+
+                            </ul>
+                            <ul style="display: flex;">
+                                <li><img src="img/Contact.icon.png" alt="" width="18px" height="18px"></li>
+                                <li><img src="img/services.icon.png" alt="" width="18px" height="18px"></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="form" align="center">
+            <table class="table">
+
+                <form action="" method="get">
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h1>form</h1>
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td><label for="name" >username</label></td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">email</label></td>
+                        <td><input type="email  " name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">passward</label></td>
+                        <td><input type="password" name="pass" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="male">gender</label></td>
+                        <td><input type="radio" name="gender" id="male" value="M">
+                            <label for="male">male</label>
+                            <input type="radio" name="gender" id="female" value="f">
+                            <label for="female">female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="check">more info</label></td>
+                        <td><input type="checkbox" name="check" id="check" value="food">
+                            <label for="check">Food</label>
+                            <input type="checkbox" name="check" id="bed" value="bed">
+                            <label for="bed">Bed</label>
+                            <input type="checkbox" name="check" id="hot" value="hotel">
+                            <label for="hot">Hotel</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td><select name="country" id="country">
+                                <option value="Ind">India</option>
+                                <option value="Nep">Nepal</option>
+                                <option value="Ban">Bangladesh</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="ok"></td>
+                        <td align="right"><a href="side-nav.html">restart</a></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </header>
+</body>
+
+</html>

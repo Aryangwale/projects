@@ -1,0 +1,51 @@
+@media only screen and (max-width: 680px) 
+{
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f7f7;
+    padding-top: 200px;
+}
+#profile-container{
+   padding-left: 30px;
+}
+
+#usrename{
+   height: fit-content;
+   width: 100%; 
+}
+#usrename img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+#usrename span{
+    font-size: 20px;
+    letter-spacing: .8px;
+    border-bottom: 1px solid rgb(153, 146, 146);
+}
+#img-container{
+    margin-top : 10px;
+    height: 200px;
+    width: calc(100vw - 37px);
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;  
+}
+#img-container::-webkit-scrollbar{
+    scroll-snap-type: none;
+}
+#img-container img{
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: 1s;
+    
+}
+}

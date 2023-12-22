@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .login{
+                border: 3px solid black;
+                height: 250px;
+                width: 300px;
+                margin: 100px auto;
+                border-bottom-right-radius: 50px;
+                border-top-left-radius: 50px;
+                border-top-color: blue;
+                border-bottom-color:  rgb(193, 16, 122) ;
+                color: blue;
+
+                
+
+            }
+            .text{
+               text-align: center;
+               padding: 10px;                
+            }
+            h2{
+                text-align: center;
+            }
+            .submit{
+                border: 1px solid black ;
+                width: 100px;
+                margin: 7px auto;
+                text-align: center;
+                border-radius: 20px;
+            }
+            .fotter{
+                margin-top: 85px;
+            }
+            .first{
+                margin-left: 5px;
+            }
+            .second{
+                margin-left: 100px;
+            }
+            #login{
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-color: blue;
+            }
+            #pass{
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-color: blue;
+            }
+            body{
+                background-color: rgb(41, 38, 52);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+         <div>
+            <h2>login</h2>
+            <div class="text">
+                <label for="login">
+                    <input style="color: blue;" type="text" id="login" placeholder="Entre your user name" autocomplete="off">
+                </label>
+            </div>
+            <div class="passward text">
+                <label for="pass">
+                    <input type="password" placeholder="Enter your passward" id="pass">
+                </label>
+            </div>
+            <div class="submit">
+                <a>Submit</a>
+            </div>
+            <div class="fotter">
+                <a class="first">Forgot passward ?</a>
+                <a class="second">SingUp</a>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

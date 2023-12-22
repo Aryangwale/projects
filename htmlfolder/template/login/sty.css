@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 50%;
+    height: 592px;
+    box-sizing: border-box;
+    border: 1px solid;
+    text-align: center;
+    background-color: rgb(164, 199, 199);
+    margin: auto;
+}
+.main-con{
+    border: 1px solid;
+    width: 300px;
+    height: 350px;
+    margin: 110px auto;  
+    background-color: white; 
+}
+.first{
+    padding: 13px 0;
+   
+}
+.first h1{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.first label {
+    font-size: 20px;
+    margin: 10px;
+}
+.first input{
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.first button{
+    margin: 20px 0;
+    width: 80%;
+    font-size: 17px;
+}
+.ss{
+    margin: 30px 20px;
+    border: 1px solid;
+    padding: 2.4px;
+    background-color: rgba(0, 0, 0, 0.094);
+    cursor: pointer;
+}
+#sp1{
+    float: left;
+}
+#sp2{
+    float: right;
+}
+.second{
+    padding: 13px 0;
+    display: none;
+}
+.second h1{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.second label {
+    font-size: 18px;
+}
+.second input{
+    margin: 8px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.second button{
+    margin: 10px 0;
+    width: 80%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}

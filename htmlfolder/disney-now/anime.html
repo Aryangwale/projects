@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anime</title>
+    <style>
+        #head {
+            white-space: nowrap;
+            gap: 4px 19px;
+            width: 100%;
+            height: 75px;
+
+            box-sizing: border-box;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+        }
+
+        #head::-webkit-scrollbar {
+            scroll-snap-type: none;
+        }
+
+        .left {
+            background-color: rgb(253, 253, 253);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            position: relative;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .left img {
+            width: 80%;
+            height: 80%;
+            padding: 5px 6px;
+        }
+
+        .main {
+            height: 50px;
+            width: 50px;
+            background-color: transparent;
+
+            border-radius: 50%;
+            border: 3px solid gray;
+            border-top-color: black;
+
+            position: absolute;
+            top: 0;
+            animation: ok1 .9s 2;
+        }
+
+        @keyframes ok {
+            0% {
+                rotate: 0deg;
+                height: 50px;
+                width: 50px;
+            }
+
+            100% {
+                rotate: 360deg;
+
+            }
+        }
+
+        .page {
+            display: none;
+            height: 500px;
+            width: 100%;
+            background-color: lightseagreen;
+            position: relative;
+            padding-top: 32px;
+        }
+
+        .page #but {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: red;
+            border: red;
+            height: 30px;
+            width: 30px;
+        }
+        #in{
+            width: fit-content;
+            height: fit-content;
+         
+            animation: all 5s infinite;
+        }
+        #box {
+            height: 40px;
+            widows: 100%;
+            border: 1px solid;
+            box-sizing: border-box;
+            overflow: hidden;
+            
+        }
+
+        @keyframes all {
+            0%{
+                margin-top: -40px;
+            }
+            33%{
+                margin-top: -70px;
+            }
+            66%{
+                margin-top: -110px;
+                
+            }
+            99%{
+                margin-top: -150px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+        }
+    </style>
+    <script>
+        function cancel() {
+            var a = document.querySelector(".round");
+            var p = document.getElementById("page");
+            a.style.animationName = "ok1";
+            p.style.display = "none"
+        }
+        function myfun(x) {
+            var a = document.getElementById("round1");
+            var p = document.getElementById("page");
+            a.style.animationName = "ok";
+            p.style.display = "block"
+
+        }     
+    </script>
+</head>
+
+<body>
+    <!-- <div id="head">
+
+        <div class="left" onclick="myfun()">
+            <img src="img/logo/icons8-disney-logo-48.png" alt="">
+            <div class="main round"></div>
+        </div> 
+        <div class="left" id="first" onclick="myfun(round1);">
+            <img src="img/logo/icons8-disney-logo-48.png" alt="">
+            <div class="main" id="round1"></div>
+        </div>
+        <div class="left" id="second" onclick="myfun(round2)">
+            <img src="img/logo/icons8-disney-logo-48.png" alt="">
+            <div class="main" id="round2"></div>
+        </div>
+        <div class="left" onclick="myfun(round3)">
+            <img src="img/logo/icons8-disney-logo-48.png" alt="" >
+            <div class="main" id="round3"></div>
+        </div>
+    </div> -->
+    <div class="page" id="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, voluptatibus,
+        recusandae reprehenderit nisi quidem ex cupiditate et nesciunt deserunt dolorum voluptate labore corrupti earum
+        officia eveniet! Modi eum enim sunt!
+        <button id="but" onclick="cancel()">X</button>
+
+    </div>
+
+    <div id="box" align="center">
+        <div id="in">
+            <p id="p1">Lorem, ipsum dolor.</p>
+            <p id="p2">Lorem, ipsum dolor.</p>
+            <p id="p3">Lorem, ipsum dolor.</p>
+            <p id="p4">Lorem, ipsum dolor.</p>
+            <p id="p4">Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+</body>
+
+</html>

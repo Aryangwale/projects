@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 400px;
+            background-color: gainsboro;
+            
+            position: relative;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border: 1.8 px solid;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            bottom: 0;
+            animation: up 3s infinite ,move 3s infinite;
+        }
+        @keyframes up {
+            0%{
+                bottom: 0;
+            }
+            50%{
+                bottom: 200px;
+            }
+            100%{
+                bottom: 0px;
+            }
+        }
+        @keyframes move {
+            0%{
+                left: 0;
+            }
+            
+            50%    {
+                left:  300px;
+            }
+            100%    {
+                left:  600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

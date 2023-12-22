@@ -1,0 +1,40 @@
+#main{
+    position: relative;
+}
+#respo{
+    width: 100%;
+    height: 580px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.256);
+    color: white;
+}
+#respo h1{
+    font-size: 43px;
+    text-align: center;
+    margin: 20px 0;
+}
+#respo h1 span{
+    color: green;
+    text-decoration: underline;
+}
+#respo ul{
+    margin: 29px;
+    width: 75%;
+    margin: auto;
+}
+#respo h3{
+    font-size: 29px;
+    margin: 15px 60px;
+}
+#respo ul li{
+    margin: 5px;
+    font-size: 18px;
+}
+img{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: -1;
+    height: 580px;
+    width: 100%;
+}

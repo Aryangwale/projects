@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    color: black;
+    background-color: #fff;
+    /* border: 1px solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 2px 2px rgb(45, 39, 39);
+    z-index: 2;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    width: 390px;
+    height: inherit;
+    /* border: 1px solid; */
+    text-align: right;
+}
+#logo h1{
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(32, 178, 171, 0.539);
+    /* border: 1px solid; */
+    font-size: 38px;
+    letter-spacing :   1.4px;
+}
+#logo span{
+    letter-spacing: 3px;
+    font-size: 17px;
+    /* border: 1px solid; */
+    display: block;
+    color: green;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.623);
+    margin-right: 10px;
+}
+#nav-item{
+    width: 100%;
+    height: inherit;
+    /* border: 1px solid; */
+    /* text-align: right; */
+}
+#nav-item ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: inherit;
+}
+#nav-item ul li a{
+    margin: 25px;
+    font-size: 20px;
+    padding: 6px 15px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    cursor: pointer;
+
+}
+#nav-item ul li a:hover{
+    color: green;
+    border: 1px solid;
+}   
+
+#main{
+    height: 659px;
+    width: 100%;
+    /* border: 1px solid; */
+    padding-top: 70px;
+}

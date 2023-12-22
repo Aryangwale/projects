@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.font {
+    font-weight: 600;
+    font-size: x-large;
+    font-style: italic;
+
+}
+
+.first {
+    height: 10px;
+}
+
+.bot {
+    
+    display: inline-block;
+
+
+}
+
+.mid {
+    
+}
+
+.g {
+    height: 474px;
+}
+
+.oo {
+    margin-bottom: 200px;
+}
+
+.ooo {
+    height: 350px;
+}
+
+.top {
+    height: 30px;
+}
+
+.nmid {
+    padding-left: 30px;
+}
+hr{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.navbar{
+    background-color: #854242;
+    border-radius: 6pc;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px #1f1717;
+}
+.navbar ul{
+    list-style: none;
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    margin: 14px 13px;
+}
+.navbar input{
+   padding: 2px 23px;
+   margin: 14px 13px;
+   border-radius: 16px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 49px;
+}
+.navbar li a:hover{
+    background-color: rgb(212, 189, 189);
+    border-radius: 16px;
+    color: black;
+}
+.search{
+    color: aliceblue;
+    float: right;
+    padding: 0px 49px;
+}
+#fi{
+    margin-top: 55px;
+}
+#menu_con {
+    margin: 33px 138px;
+}
+
+.menu_con {
+    display: inline-block;
+}
+
+#img_con {
+    width: 40%;
+}
+
+#text_con {
+    width: 40%;
+    float: right;
+    font-size: 20px;
+    margin-right: 128px;
+    font-weight: 100;
+
+}
+
+#text_con p {
+    margin: 4px -2px;
+}
+
+#order_con {
+    text-align: center;
+}
+
+#order_con a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px 9px;
+    border-radius: 16px;
+}
+
+#order_con a:hover {
+    background-color: rgb(155, 69, 69);
+    color: rgb(51, 131, 201);
+}
+
+#text_con h1:hover {
+    background-color: rgb(202, 189, 189);
+    color: rgb(37, 40, 43);
+}
+
+#text_con p:hover {
+    background-color: rgb(202, 189, 189);
+    color: rgb(37, 40, 43);
+}
+.thanks{
+    color: rgb(55, 188, 144);
+    font-size: 25px;
+    font-family:fantasy;
+    text-align: center;
+    
+    
+}
+.ad{
+    padding: 7px ;
+}
+#my{
+    text-align: center;
+}
+#my h1{
+    font-size: 52px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.in{
+    display: inline-block;
+}
+#ser_con h2{
+    text-decoration: underline;
+    font-size: 40px;
+}
+#txt_con2{
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding: 76px 18px;
+    margin: 29px 29px;
+}
+#img_con2{
+    width: 45%;
+    float: right;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+#img_con2 img{
+    width: 80%;
+    padding: 14px;
+}

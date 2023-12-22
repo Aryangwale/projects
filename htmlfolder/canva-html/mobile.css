@@ -1,0 +1,186 @@
+@media only screen and (max-width: 700px) {
+    #nav {
+        height: 60px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(164, 138, 138);
+        box-shadow: 0 1px 8px black;
+        justify-content: end;
+    }
+    #for-web {
+        display: none;
+    }
+
+    #logo {
+        width: 96px;
+        position: absolute;
+        left: 31px;
+        top: 13px;
+    }
+
+    #navbar {
+        margin: auto;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: transition;
+        overflow: hidden;
+        transition: .7s;
+        height: 100vh;
+        padding-top: 20px;
+        width: max-content;
+    }
+
+    #navbar li {
+        margin: auto;
+        list-style-type: none;
+        display: block;
+        padding: 15px 1px;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    #navbar li a {
+        padding: auto;
+        text-decoration: none;
+        color: black;
+        font-size: 26px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    button {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        width: 36px;
+        height: 35px;
+        margin: 17.9px;
+        border-radius: 10px;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    #hy {
+        height: fit-content;
+        width: 100%;
+        background-color: rgba(30, 28, 28, 0.406);
+        display: block;
+    }
+    #hy #text{
+        margin: 20px;
+        font-size: 59px;
+        position: relative;
+        padding-left: 13px;
+    }
+    #hy #text::before{
+        content: "";
+        height: 70px;
+        width: 8px;
+        background: linear-gradient(orange,white,green);
+        position: absolute;
+        left: 0;
+    }
+    #divtext{
+        
+        display: flex;
+        justify-content: right;
+    }
+    #hy #text1{
+        font-size: 39px;
+        position: relative;
+        text-align: end;
+        width: 200px;
+        margin: 10px 7px;  
+    }
+    #hy #text1::before{
+        content: "";
+        height: 45px;
+        width: 5px;
+        background: linear-gradient(orange,white,green);
+        position: absolute; 
+        left: 0;    
+    }
+ #container{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+ }
+ #container::-webkit-scrollbar{
+    scroll-snap-type: none;
+ }
+    #price {
+        height: 360px;
+        width: 220px;
+        text-align: center;
+        border: 1px solid;
+        text-align: center;
+        display: inline-block;
+        margin: 0 20px;
+        background-color: #fff;
+    }
+
+    #price img {
+        border-radius: 24px;
+        width: 190px;
+        height: 190px;
+    }
+
+    #price #h1 {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #price #h2 {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #price .h3 {
+        background-color: #9e5050;
+        font-size: 20px;
+        margin-top: 20px;
+        width: 149px;
+        overflow: hidden;
+        height: 28px;
+        border-radius: 20px;
+        font-weight: 200;
+        padding: 4px;
+    }
+
+    #price .h3 #small {
+        display: none;
+    }
+
+    #price .h3:hover {
+        transition: .8s;
+        width: 149px;
+        background: #9e5050;
+        display: block;
+    }
+
+    #for-mobil {
+        display: block;
+    }
+    #detail{
+        height: 100vh;
+        display: no;
+        z-index: 1;
+        background-color: #fff;
+    }
+    #detail #span{
+        text-align: right;
+        background-color: red;
+        
+    }
+    
+}

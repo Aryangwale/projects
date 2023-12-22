@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about{
+    height: 590px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#about #left{
+    height: 590px;
+    width: 68%;
+    text-align: center;
+}
+#about #left p{
+    border-bottom: 1px solid;
+    text-align: left;
+    width: 95%;
+    font-size: 18px;
+    margin: auto;
+    padding: 5px 0;
+}
+#about #right{
+    height: 590px;
+    width: 30%;
+}
+#about #right img{
+    height: 100%;
+    width: 100%;
+}

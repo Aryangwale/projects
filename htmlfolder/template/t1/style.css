@@ -1,0 +1,28 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar ul{
+    display: flex;
+}
+.left{
+flex-grow: 1;
+}
+.navbar ul li{
+    list-style-type: none;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: rgb(230, 102, 5);
+}
+.navbar ul li:hover{
+    background-color: aqua;
+}
+.side-nav{
+    display: none;
+}
+.navbar ul:hover .side-nav{
+    display: block;
+    position: absolute;
+}

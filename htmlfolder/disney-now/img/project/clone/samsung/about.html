@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<head>
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <style>
+            body {
+                padding-top: 76px;
+            }
+    
+            .nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: lavender;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+            }
+    
+            .navbar ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+            }
+    
+            
+            .navbar ul li {
+                list-style-type: none;
+                padding: 0 40px;
+                position: relative;
+            }
+            .navbar ul li a{
+                color: black;
+                text-decoration: none;
+            }
+            .navbar .drop {
+                display: none;
+                position: absolute;
+                width: 100%;
+                background-color: lavender;
+                height: 120px;
+                /* text-align: left; */
+                text-align: center;
+    
+            }
+            .dis1{
+                margin-right: 0px;
+            }
+            .navbar .drop ul {
+                display: block;
+                white-space: nowrap;
+                border: 1px solid;
+    
+            }
+    
+            .navbar .drop ul li {
+                float: left;
+                border: 1px solid;
+            }
+    
+            .navbar ul li:hover .drop {
+                display: block;
+                top: 100%;
+            }
+            .drop1{
+                /* border: 1px solid black; */
+                width: 100%;
+                position: absolute;
+                background-color: lavender;
+                height: 200px;
+                top: 26px;
+                display: none;
+                right: 0;
+            }
+            .drop1 ul{
+                display: block;
+                white-space: nowrap;
+                margin-top: 40px;
+                padding: 0;
+            }
+            .drop1 ul li{
+                margin: 20px 0;
+                color: black;
+            }
+            .navbar ul li:hover .drop1 {
+                display: block;
+            }
+    
+            .nav .img img {
+                width: 18px;
+                margin: 0 7px;
+            }
+    
+            .nav .name {
+                margin: 10px;
+            }
+            .menu1{
+                display: none;
+            }
+    
+            .container {
+                /* border: 1px solid black; */
+            }
+    
+            .container .h1 {
+                border-bottom: 2px solid black;
+                margin: 47px 0;
+                padding: 10px 0;
+            }
+            .nav21{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .dis{
+                display: none;
+            }
+            @media only screen and (max-width: 1000px){
+                .dis{
+                    display: none;
+                }
+                .dis1{
+                    display: none;
+                }
+                .menu1{
+                    display: block;
+                }
+                .dis {
+                    position: absolute;
+                    display: block;
+                    top: 4.5px;
+                    background-color: lavender;
+                    height: 100vh;
+                    width: 60vw;
+                    overflow: hidden;
+                    transition: all .6s ease;
+                    z-index: -2;
+                }
+                
+                .navbar ul {
+                
+                margin-top: 20px;
+                display: block;
+                
+                }
+    
+                .navbar ul li {
+                list-style-type: none;
+                padding: 0 20px;
+                position: relative;
+                margin: 60px 10px;
+                }
+    
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            
+            <div class="name">
+                <h1>ZenBlog</h1>
+            </div>
+            <div class="nav21">
+                <div class="navbar dis" id="menu2">
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="extra.html">Single Post</a></li>
+                        <li>Categories
+                            <div class="drop">
+                                <ul>
+                                    <li>Drop down</li>
+                                    <li>Drop down1</li>
+                                    <li>Drop down2</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" style="color: rgb(182, 24, 158); font-weight: 550; border-bottom: 2px solid;">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar dis1" >
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="extra.html">Single Post</a></li>
+                        <li >Categories
+                            <div class="drop1">
+                                <ul>
+                                    <li>Drop down</li>
+                                    <li>Drop down1</li>
+                                    <li>Drop down2</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" style="color: rgb(182, 24, 158); font-weight: 550; border-bottom: 2px solid;">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+            
+                <div class="img">
+                    <img src="img/icons8-facebook-30.png" alt="">
+                    <img src="img/icons8-twitter-30.png" alt="">
+                    <img src="img/icons8-insta-50.png" alt="" width="30px">
+                    <img src="img/icons8-search-50.png" alt="" width="30px">
+                    
+                </div>
+                <div class="menu1 " style="margin: 0 30px;" ><img src="img/icons8-menu-50.png" alt="." width="30px" height="30px" onclick="on1()"></div>
+            </div>
+            
+        </div>
+    <div class="container ">
+        <h1 style="font-family:  'Eb Garamond serif'; text-align: center; font-size: 60px;">About Us</h1>
+        <br><br><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-landscape-2.jpg" width="100%">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div style="color: gray; font-size: 13px; word-spacing: 8px;  margin: 15px 0;">About us</div>
+                <h1 style="font-family: 'Eb Garamond serif'; font-size: 50px;">Company History</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime,
+                    adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore?
+                    Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus
+                    aut!<br>
+                    <br>
+                    <br>
+
+                    Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde excepturi dolores
+                    quasi eos vero harum ipsa quam laborum illo aut facere voluptates aliquam adipisci sapiente beatae
+                    ullam.
+                    Tempora culpa iusto illum accusantium cum hic quisquam dolor placeat officiis eligendi.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6 col-md-12">
+                <div style="color: gray; font-size: 13px; word-spacing: 8px;  margin: 15px 0;"> MISSION & VISION</div>
+                <h1 style="font-family: 'Eb Garamond serif'; font-size: 50px;">Mission & Vision</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime,
+                    adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore?
+                    Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus
+                    aut!<br>
+                    <br>
+                    <br>
+
+                    Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde excepturi dolores
+                    quasi eos vero harum ipsa quam laborum illo aut facere voluptates aliquam adipisci sapiente beatae
+                    ullam.
+                    Tempora culpa iusto illum accusantium cum hic quisquam dolor placeat officiis eligendi.
+
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-landscape-1.jpg" width="100%">
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="c2">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <h1 style="font-family: 'Eb Garamond serif'; font-size: 50px;">Latest News</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, perspiciatis repellat maxime,
+                    adipisci non ipsam at itaque rerum vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore?
+                    Voluptatum in tempora earum deleniti, culpa odit veniam, ea reiciendis sunt ullam temporibus
+                    aut!<br>
+                    <br>
+                    <br>
+
+                    Fugit eaque illum blanditiis, quo exercitationem maiores autem laudantium unde excepturi dolores
+                    quasi eos vero harum ipsa quam laborum illo aut facere voluptates aliquam adipisci sapiente beatae
+                    ullam.
+                    Tempora culpa iusto illum accusantium cum hic quisquam dolor placeat officiis eligendi.
+
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-portrait-3.jpg"
+                            width="100%">
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-portrait-4.jpg"
+                            id="img" width="100%">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="container" style="text-align: center;">
+        <h1 style="font-family:  'Eb Garamond serif'; text-align: center; font-size: 60px;">Our Team</h1>
+        <p style="text-align: center;font-family:  'Eb Garamond serif'; padding: 4px 30px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nihil sint sed,
+            fugit distinctio ad eius itaque
+            deserunt doloribus harum excepturi laudantium sit
+            officiis et eaque blanditiis. Dolore natus excepturi
+             recusandae.
+        </p>
+        
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 ">
+                <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-1.jpg" width="200px"
+                    height="200px" style="border-radius: 50%;">
+                <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Cameron Williamson</h4>
+                <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">FOUNDER & CEO</p>
+
+                <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis,
+                    perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                    vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore? Voluptatum in tempora earum deleniti, culpa odit
+                    veniam, ea reiciendis sunt ullam temporibus aut!</p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-2.jpg" width="200px"
+                    height="200px" style="border-radius: 50%;">
+                <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Wade Warren</h4>
+                <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">FOUNDER & VP</p>
+
+                <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis,
+                    perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                    vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore? Voluptatum in tempora earum deleniti, culpa odit
+                    veniam, ea reiciendis sunt ullam temporibus aut!</p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-3.jpg" width="200px"
+                    height="200px" style="border-radius: 50%;">
+                <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Jane Cooper</h4>
+                <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">Editor Staff</p>
+
+                <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Facilis,
+                    perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                    vitae, necessitatibus nulla animi expedita cumque provident
+                    inventore? Voluptatum in tempora earum deleniti, culpa odit
+                    veniam, ea reiciendis sunt ullam temporibus aut!</p>
+            </div>
+        </div>
+
+        
+            <div class="row mt-5"> 
+                <div class="col-lg-4 col-md-12">
+                    <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-4.jpg" width="200px"
+                        height="200px" style="border-radius: 50%;">
+                    <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Cameron Williamson</h4>
+                    <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">Editor Staff</p>
+    
+                    <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Facilis,
+                        perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                        vitae, necessitatibus nulla animi expedita cumque provident
+                        inventore? Voluptatum in tempora earum deleniti, culpa odit
+                        veniam, ea reiciendis sunt ullam temporibus aut!</p>
+    
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-5.jpg" width="200px"
+                        height="200px" style="border-radius: 50%;">
+                    <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Cameron Williamson</h4>
+                    <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">Editor Staff</p>
+    
+                    <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Facilis,
+                        perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                        vitae, necessitatibus nulla animi expedita cumque provident
+                        inventore? Voluptatum in tempora earum deleniti, culpa odit
+                        veniam, ea reiciendis sunt ullam temporibus aut!</p>
+    
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/person-6.jpg" width="200px"
+                        height="200px" style="border-radius: 50%; ">
+                    <h4 style="font-family:  'Eb Garamond serif'; padding-top: 20px;">Cameron Williamson</h4>
+                    <p style="font-family:  'Eb Garamond serif';padding-left: 30px;">Editor Staff</p>
+    
+                    <p style="font-family: 'Eb Garamond serif';">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Facilis,
+                        perspiciatis repellat maxime, adipisci non ipsam at itaque rerum
+                        vitae, necessitatibus nulla animi expedita cumque provident
+                        inventore? Voluptatum in tempora earum deleniti, culpa odit
+                        veniam, ea reiciendis sunt ullam temporibus aut!</p>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-5  bg-dark" id="c3">
+        <div class="container-fluid" style="color: rgb(177, 177, 177); font-size: 15px;">
+            <div class="row p-2">
+                <div class="col-lg-4 col-md-12">
+                    <strong style="display: block; padding: 24px 0; ">About ZenBlog</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab, perspiciatis beatae autem
+                        deleniti voluptate nulla a dolores, exercitationem eveniet libero laudantium recusandae officiis
+                        qui aliquid blanditiis omnis quae. Explicabo?</p>
+                    <span><a href="#" class="text-white">Learn More</a></span>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <strong style="display: block; padding: 24px 0; ">Navigation</strong>
+                    <div>
+                        <ul class="arrow " style="list-style-type: none; padding: 0;">
+                            <li class="mt-2">&gt; Home</li>
+                            <li class="mt-2">&gt; Blog</li>
+                            <li class="mt-2">&gt; Categories</li>
+                            <li class="mt-2">&gt; Single Post</li>
+                            <li class="mt-2">&gt; About us</li>
+                            <li class="mt-2">&gt; Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-6">
+                    <strong style="display: block; padding: 24px 0; ">Categories</strong>
+                    <div>
+                        <ul class="arrow " style="list-style-type: none; padding: 0;">
+                            <li class="mt-2">&gt; Business</li>
+                            <li class="mt-2">&gt; Culture</li>
+                            <li class="mt-2">&gt; Sport</li>
+                            <li class="mt-2">&gt; Food</li>
+                            <li class="mt-2">&gt; Politics</li>
+                            <li class="mt-2">&gt; Celebrity</li>
+                            <li class="mt-2">&gt; Startups</li>
+                            <li class="mt-2">&gt; Travel</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <strong style="display: block; padding: 24px 0; ">Recent Posts</strong>
+                    <div class="d-flex m-2">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-sq-1.jpg" alt
+                            width="53px" height="53px" style="margin-right: 10px;">
+                        <div>
+                            <div style="color: gray; word-spacing: 8px; font-size: 10px; margin: 3px 0;">CULTURE • JUL
+                                5TH '22</div>
+                            <h5 style="font-size: 13px;">5 Great Startup Tips for Female Founders</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex m-2">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-landscape-2.jpg" alt
+                            width="53px" height="53px" style="margin-right: 10px;">
+                        <div>
+                            <div style="color: gray; word-spacing: 8px; font-size: 10px; margin: 3px 0;">CULTURE • JUL
+                                5TH '22</div>
+                            <h5 style="font-size: 13px;">Life Insurance And Pregnancy: A Working Mom’s Guide
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="d-flex m-2">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-sq-3.jpg" alt
+                            width="53px" height="53px" style="margin-right: 10px;">
+                        <div>
+                            <div style="color: gray; word-spacing: 8px; font-size: 10px; margin: 3px 0;">CULTURE • JUL
+                                5TH '22</div>
+                            <h5 style="font-size: 13px;">What is the son of Football Coach John Gruden, Deuce Gruden
+                                doing Now?
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="d-flex m-2">
+                        <img src="https://bootstrapmade.com/demo/templates/ZenBlog/assets/img/post-sq-4.jpg" alt
+                            width="53px" height="53px" style="margin-right: 10px;">
+                        <div>
+                            <div style="color: gray; word-spacing: 8px; font-size: 10px; margin: 3px 0;">CULTURE • JUL
+                                5TH '22</div>
+                            <h5 style="font-size: 13px;">How to Avoid Distraction and Stay Focused During Video Calls?
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="background-color: black; color: white; ">
+            <div class="col-lg-6 p-5 col-md-6" style="text-align: center;">
+                <h6>© Copyright ZenBlog. All Rights Reserved</h6>
+                <p>Designed by BootstrapMade</p>
+            </div>
+            <div class="col-lg-6 pt-5 col-md-6">
+                <h1 style="text-align: center;">ZenBlog</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

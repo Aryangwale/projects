@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    background-color: #c14646;
+}
+#row1{
+text-align: center;
+
+}
+#row1 a{
+    margin: 2px 20px;
+    color: black;
+}
+#main-in{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.all{
+    height: 315px;
+    width: 217px;
+   
+    border-radius: 20px;
+    margin: 20px 0;
+    position: relative;
+}
+.all img{
+    height: 100%;
+    border-radius: 20px;
+}
+.all img:hover{ 
+    position: absolute;
+    transition: .8s;
+    width: 120%;
+    height: 110%;
+    z-index: 1;
+    top: -20px;
+    left: -20px;
+}

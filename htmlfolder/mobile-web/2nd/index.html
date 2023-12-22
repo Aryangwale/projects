@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-wed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="profile-container">
+            <table>
+
+                <tr id="usrename">
+                    <td><img src="img/icons8-disney-logo-48.png" alt=""></td>
+                    <td><span id="line">usrename</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div id="img-container" onclick="check(1)">
+                            <img src="img/leo-1st.jpg" width="169px" height="184px" id="img1" onclick="zoom(1,o)">
+                            <img src="img/leo-2st.jpg" width="169px" height="100%" id="img2">                                                        
+                            <img src="img/leo-3st.jpg" width="169px" height="100%" id="img3">
+                            <img src="img/leo-4st.jpg" width="169px" height="100%" id="img4">                                                        
+                        </div>
+                        
+                    </td>
+                </tr>
+            </table>
+           
+            <h1 id="check1">ok</h1>
+        </div>
+    </div>
+    <script>
+        function check(){
+            var a = document.getElementById("check1")
+            a.innerHTML = "okkk"
+        }
+        function zoom(){
+            var z = document.getElementById("img1")
+            var y = document.getElementById("img-container")
+            // y.style.position = "relative"
+            // 
+            z.style.position = "absolute"
+            z.style.top = "190px"   
+            z.style.width = "260px"
+            z.style.height= "300px"
+            z.style.borderRadius = "24px"
+        }
+    </script>
+</body>
+
+</html>

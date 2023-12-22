@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+    .container{
+        text-align: center;
+    }
+    .row{
+        margin: 6px;
+    }
+    .slid{
+        height: 340px;
+        border: 1px solid red;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        margin: auto;
+    }
+    .img2{
+        animation: slide 7s infinite;
+    }
+    @keyframes slide{
+        0%{
+            margin-left: 0 ;
+        }
+        20%{
+            margin-left: -306px ;
+        }
+        40%{
+            margin-left: -612px ;
+        }
+        60%{
+            margin-left: -918px;
+        }
+        80%{
+            margin-left: -1224px;
+        }
+        100%{
+            margin-left: 0;
+        }
+        /* 60%{
+            margin-left: -60% ;
+        }
+        75%{
+            margin-left: -75% ;
+        }
+        90%{
+            margin-left: -90%;
+        }
+        100%{
+            margin-left: -90%;
+        } */
+
+    }
+    .slid::-webkit-scrollbar{
+        scroll-snap-type: none;
+    }
+    .img{
+        display: inline-flex;
+        width: 270px;
+        height: 300px;
+        margin: 20px;
+        border: 3px solid;
+        box-sizing: border-box;
+        transition: all 2s;
+    }
+    .img img{
+        border-radius: 24px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .img:hover{
+       transform: scale(1.1);
+    }
+</style>
+</head>
+<body>
+    <div class="container mt-5 text-white" >
+        <div class="row ">
+            <div class="col-lg-6 col-12 col-xl-8 bg-secondary">
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam tempora fuga impedit nemo aliquid totam quas. Porro, itaque voluptate consectetur ipsam vero accusamus pariatur, ipsum soluta similique atque dolorem.</p>
+                <h1>Why choose lakme</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem obcaecati, illo accusamus sunt doloribus quo commodi rem minus cum assumenda excepturi fuga voluptatibus sint, ab quam sapiente nisi. Eligendi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, numquam, cum possimus blanditiis expedita dolore itaque ut perspiciatis adipisci ex, nihil cupiditate non nesciunt consequuntur volupminus quod cumque atque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem obcaecati, illo accusamus sunt doloribus quo commodi rem minus cum assumenda excepturi quod cumque atque!</p>
+            </div>
+            <div class="col-lg-6 col-12 col-xl-4 ">
+                <div class="row bg-secondary p-1">
+                    <div class="col-md-12">
+                        <img src="img/mainproduct.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 bg-warning p-2">
+                    <img src="img/product1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-6 bg-primary p-2">
+                    <img src="img/product2.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="slid container col-12">
+        <div class="img img2"><img src="img/mainproduct.jpg" alt=""></div>
+        <div class="img"><img src="img/product1.jpg" alt=""></div>
+        <div class="img"><img src="img/product2.jpg" alt=""></div>
+        <div class="img"><img src="img/product1.jpg" alt=""></div>
+        <div class="img"><img src="img/product2.jpg" alt=""></div>
+        <div class="img"><img src="img/product2.jpg" alt=""></div>
+        <div class="img"><img src="img/product1.jpg" alt=""></div>
+        <div class="img"><img src="img/product2.jpg" alt=""></div>
+    </div>
+    <div class="container mt-5 text-white" >
+        <div class="row ">
+            <div class="col-lg-6 col-12 col-xl-8 bg-secondary">
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam tempora fuga impedit nemo aliquid totam quas. Porro, itaque voluptate consectetur ipsam vero accusamus pariatur, ipsum soluta similique atque dolorem.</p>
+                <h1>Why choose lakme</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem obcaecati, illo accusamus sunt doloribus quo commodi rem minus cum assumenda excepturi fuga voluptatibus sint, ab quam sapiente nisi. Eligendi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, numquam, cum possimus blanditiis expedita dolore itaque ut perspiciatis adipisci ex, nihil cupiditate non nesciunt consequuntur volupminus quod cumque atque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem obcaecati, illo accusamus sunt doloribus quo commodi rem minus cum assumenda excepturi quod cumque atque!</p>
+            </div>
+            <div class="col-lg-6 col-12 col-xl-4 ">
+                <div class="row bg-secondary p-1">
+                    <div class="col-md-12">
+                        <img src="img/mainproduct.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 bg-warning p-2">
+                    <img src="img/product1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-6 bg-primary p-2">
+                    <img src="img/product2.jpg" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

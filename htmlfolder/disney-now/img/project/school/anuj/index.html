@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .area{
+        width: 700px;
+        height: 500px;
+        border: 1px solid red;
+        background-color: salmon;
+        position: relative;
+        top: 50px;
+        left: 200px;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(254, 25, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        animation: up 10s infinite,up1 10s infinite;
+    }
+    @keyframes up {
+        0%{
+            bottom: 0;
+        }
+        10%{
+            bottom: 50px;
+        }
+        20%{
+            bottom: 100px;
+        }
+        30%{
+            bottom: 150px;
+        }
+        40%{
+            bottom: 200px;
+        }
+        50%{
+            bottom: 250px;
+        }
+        60%{
+            bottom: 200px;
+        }
+        70%{
+            bottom: 150px;
+        }
+        80%{
+            bottom: 100px;
+        }
+        90%{
+            bottom: 50px;
+        }
+        100%{
+            bottom: 0px;
+        }
+    }
+    @keyframes up1 {
+        0%{
+            left: 0;
+        }
+        10%{
+            left: 50px;
+        }
+        20%{
+            left: 100px;
+        }
+        30%{
+            left: 150px;
+        }
+        40%{
+            left: 200px;
+        }
+        50%{
+            left: 250px;
+        }
+        60%{
+            left: 200px;
+        }
+        70%{
+            left: 150px;
+        }
+        80%{
+            left: 100px;
+        }
+        90%{
+            left: 50px;
+        }
+        100%{
+            left: 0px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="area">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
